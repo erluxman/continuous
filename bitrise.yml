@@ -1,3 +1,16 @@
+app:
+  envs:
+    - opts:
+        is_expand: false
+      GRADLE_BUILD_FILE_PATH: build.gradle
+    - opts:
+        is_expand: false
+      GRADLEW_PATH: "./gradlew"
+
+
+      version: 0.2
+
+
 phases:
   pre_build:
     commands:
