@@ -7,14 +7,15 @@ import kotlinx.android.synthetic.main.content_main.*
 
 class MainActivity : AppCompatActivity() {
 
+    private val uiActionsInfo = UIActionsInfo()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
 
-        fab.setOnClickListener { textView.text = "Clicked" }
+        fab.setOnClickListener { textView.text = uiActionsInfo.click().lastAction }
         fab.setOnLongClickListener {
-            textView.text = "LongClicked"
+            textView.text = uiActionsInfo.longClick().lastAction
             true
         }
     }

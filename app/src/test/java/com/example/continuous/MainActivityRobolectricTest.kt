@@ -12,7 +12,7 @@ import org.junit.runner.RunWith
 
 
 @RunWith(AndroidJUnit4::class)
-class MainActivityTest{
+class MainActivityRobolectricTest{
 
     @get:Rule
     val rule = ActivityTestRule(MainActivity::class.java)
