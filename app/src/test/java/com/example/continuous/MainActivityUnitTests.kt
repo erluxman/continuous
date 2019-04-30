@@ -31,6 +31,6 @@ private lateinit var uiActionsInfo :  UIActionsInfo
     }
     @Test
     fun check_doubleClickRegisters(){
-        assertEquals("DoubleClicked ",uiActionsInfo.doubleClick().lastAction)
+        assertEquals("DoubleClicked",uiActionsInfo.doubleClick().lastAction)
     }
 }
