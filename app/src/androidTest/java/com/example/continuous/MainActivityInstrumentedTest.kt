@@ -34,7 +34,7 @@ class MainActivityInstrumentedTest{
     fun textChangesTo_LongClicked_whenFabLongClicked() {
         Espresso.onView(ViewMatchers.withId(R.id.fab)).perform(ViewActions.longClick())
         Espresso.onView(ViewMatchers.withId(R.id.textView))
-            .check(ViewAssertions.matches(ViewMatchers.withText("LongClicked ")))
+            .check(ViewAssertions.matches(ViewMatchers.withText("LongClicked")))
 
     }
 
