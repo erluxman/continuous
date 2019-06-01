@@ -17,7 +17,7 @@ private lateinit var uiActionsInfo :  UIActionsInfo
 
     @Test
     fun check_UIActionIsClean() {
-        assertEquals("clean",uiActionsInfo.lastAction)
+        assertEquals("Clean",uiActionsInfo.lastAction)
     }
 
     @Test

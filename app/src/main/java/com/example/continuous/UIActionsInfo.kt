@@ -1,7 +1,7 @@
 package com.example.continuous
 
 class UIActionsInfo {
-    var lastAction: String = "clean"
+    var lastAction: String = "Clean"
         private set
 
     fun click(): UIActionsInfo {
