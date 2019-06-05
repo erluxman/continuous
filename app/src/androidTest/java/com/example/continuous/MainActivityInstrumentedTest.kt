@@ -26,7 +26,7 @@ class MainActivityInstrumentedTest{
     fun textChangesTo_Clicked_whenFabClicked(){
         Espresso.onView(ViewMatchers.withId(R.id.fab)).perform(ViewActions.click())
         Espresso.onView(ViewMatchers.withId(R.id.textView))
-            .check(ViewAssertions.matches(ViewMatchers.withText("Clickedd")))
+            .check(ViewAssertions.matches(ViewMatchers.withText("Clickeddd")))
 
     }
 
